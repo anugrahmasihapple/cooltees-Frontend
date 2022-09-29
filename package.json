@@ -26,12 +26,12 @@
         "node": "14.18.0",
         "npm": "6.14.15"
     },
-    "scripts": {
-        "start": "react-scripts --openssl-legacy-provider start",
-        "build": "react-scripts --openssl-legacy-provider build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
-    },
+   "scripts": {
+    "start": "react-scripts start",
+    "build": "rm -rf ../backend/build && react-scripts build && cp -r build ../backend/build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
     "eslintConfig": {
         "extends": [
             "react-app",
